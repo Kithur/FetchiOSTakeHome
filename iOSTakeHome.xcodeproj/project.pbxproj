@@ -14,6 +14,17 @@
 		3D1CF2792AD75E64002E5A2B /* iOSTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1CF2782AD75E64002E5A2B /* iOSTakeHomeTests.swift */; };
 		3D1CF2832AD75E64002E5A2B /* iOSTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1CF2822AD75E64002E5A2B /* iOSTakeHomeUITests.swift */; };
 		3D1CF2852AD75E64002E5A2B /* iOSTakeHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1CF2842AD75E64002E5A2B /* iOSTakeHomeUITestsLaunchTests.swift */; };
+		3D9FE1C32AD87EB9009EAF21 /* DashboardEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1C22AD87EB9009EAF21 /* DashboardEntities.swift */; };
+		3D9FE1C62AD87FFF009EAF21 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1C52AD87FFF009EAF21 /* DashboardView.swift */; };
+		3D9FE1C92AD88178009EAF21 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1C82AD88178009EAF21 /* DashboardViewModel.swift */; };
+		3D9FE1CB2AD88549009EAF21 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1CA2AD88549009EAF21 /* MealListView.swift */; };
+		3D9FE1CE2AD88700009EAF21 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3D9FE1CD2AD88700009EAF21 /* SDWebImageSwiftUI */; };
+		3D9FE1D22AD8A2B9009EAF21 /* FetchMealListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1D12AD8A2B9009EAF21 /* FetchMealListUseCase.swift */; };
+		3D9FE1D42AD8A38B009EAF21 /* DashboardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1D32AD8A38B009EAF21 /* DashboardRepository.swift */; };
+		3D9FE1D72AD8A424009EAF21 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1D62AD8A424009EAF21 /* APIService.swift */; };
+		3D9FE1D92AD8A683009EAF21 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1D82AD8A683009EAF21 /* Endpoint.swift */; };
+		3D9FE1DC2AD8ACCD009EAF21 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1DB2AD8ACCD009EAF21 /* Util.swift */; };
+		3D9FE1DF2AD8B38C009EAF21 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1DE2AD8B38C009EAF21 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,16 @@
 		3D1CF27E2AD75E64002E5A2B /* iOSTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1CF2822AD75E64002E5A2B /* iOSTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTakeHomeUITests.swift; sourceTree = "<group>"; };
 		3D1CF2842AD75E64002E5A2B /* iOSTakeHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTakeHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D9FE1C22AD87EB9009EAF21 /* DashboardEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardEntities.swift; sourceTree = "<group>"; };
+		3D9FE1C52AD87FFF009EAF21 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		3D9FE1C82AD88178009EAF21 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		3D9FE1CA2AD88549009EAF21 /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
+		3D9FE1D12AD8A2B9009EAF21 /* FetchMealListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMealListUseCase.swift; sourceTree = "<group>"; };
+		3D9FE1D32AD8A38B009EAF21 /* DashboardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRepository.swift; sourceTree = "<group>"; };
+		3D9FE1D62AD8A424009EAF21 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3D9FE1D82AD8A683009EAF21 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		3D9FE1DB2AD8ACCD009EAF21 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		3D9FE1DE2AD8B38C009EAF21 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9FE1CE2AD88700009EAF21 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +116,9 @@
 		3D1CF2662AD75E63002E5A2B /* iOSTakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				3D9FE1DA2AD8AC98009EAF21 /* Util */,
+				3D9FE1D52AD8A402009EAF21 /* Networking */,
+				3D9FE1BE2AD87E62009EAF21 /* Dashboard */,
 				3D1CF2672AD75E63002E5A2B /* iOSTakeHomeApp.swift */,
 				3D1CF2692AD75E63002E5A2B /* ContentView.swift */,
 				3D1CF26B2AD75E64002E5A2B /* Assets.xcassets */,
@@ -127,6 +152,93 @@
 			path = iOSTakeHomeUITests;
 			sourceTree = "<group>";
 		};
+		3D9FE1BE2AD87E62009EAF21 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FE1C02AD87E8B009EAF21 /* Data */,
+				3D9FE1BF2AD87E7F009EAF21 /* Domain */,
+				3D9FE1C12AD87E92009EAF21 /* Presentation */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		3D9FE1BF2AD87E7F009EAF21 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FE1D02AD8A28D009EAF21 /* Entitties */,
+				3D9FE1CF2AD8A283009EAF21 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3D9FE1C02AD87E8B009EAF21 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FE1D32AD8A38B009EAF21 /* DashboardRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3D9FE1C12AD87E92009EAF21 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FE1C72AD88169009EAF21 /* ViewModel */,
+				3D9FE1C42AD87FEA009EAF21 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3D9FE1C42AD87FEA009EAF21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FE1C52AD87FFF009EAF21 /* DashboardView.swift */,
+				3D9FE1CA2AD88549009EAF21 /* MealListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D9FE1C72AD88169009EAF21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FE1C82AD88178009EAF21 /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D9FE1CF2AD8A283009EAF21 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FE1D12AD8A2B9009EAF21 /* FetchMealListUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3D9FE1D02AD8A28D009EAF21 /* Entitties */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FE1C22AD87EB9009EAF21 /* DashboardEntities.swift */,
+			);
+			path = Entitties;
+			sourceTree = "<group>";
+		};
+		3D9FE1D52AD8A402009EAF21 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FE1D62AD8A424009EAF21 /* APIService.swift */,
+				3D9FE1D82AD8A683009EAF21 /* Endpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3D9FE1DA2AD8AC98009EAF21 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FE1DB2AD8ACCD009EAF21 /* Util.swift */,
+				3D9FE1DE2AD8B38C009EAF21 /* NetworkManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +255,9 @@
 			dependencies = (
 			);
 			name = iOSTakeHome;
+			packageProductDependencies = (
+				3D9FE1CD2AD88700009EAF21 /* SDWebImageSwiftUI */,
+			);
 			productName = iOSTakeHome;
 			productReference = 3D1CF2642AD75E63002E5A2B /* iOSTakeHome.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +330,9 @@
 				Base,
 			);
 			mainGroup = 3D1CF25B2AD75E63002E5A2B;
+			packageReferences = (
+				3D9FE1CC2AD88700009EAF21 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 3D1CF2652AD75E63002E5A2B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +375,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9FE1DF2AD8B38C009EAF21 /* NetworkManager.swift in Sources */,
+				3D9FE1DC2AD8ACCD009EAF21 /* Util.swift in Sources */,
 				3D1CF26A2AD75E63002E5A2B /* ContentView.swift in Sources */,
+				3D9FE1C92AD88178009EAF21 /* DashboardViewModel.swift in Sources */,
+				3D9FE1C62AD87FFF009EAF21 /* DashboardView.swift in Sources */,
+				3D9FE1C32AD87EB9009EAF21 /* DashboardEntities.swift in Sources */,
+				3D9FE1D92AD8A683009EAF21 /* Endpoint.swift in Sources */,
+				3D9FE1D42AD8A38B009EAF21 /* DashboardRepository.swift in Sources */,
 				3D1CF2682AD75E63002E5A2B /* iOSTakeHomeApp.swift in Sources */,
+				3D9FE1CB2AD88549009EAF21 /* MealListView.swift in Sources */,
+				3D9FE1D72AD8A424009EAF21 /* APIService.swift in Sources */,
+				3D9FE1D22AD8A2B9009EAF21 /* FetchMealListUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +710,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D9FE1CC2AD88700009EAF21 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D9FE1CD2AD88700009EAF21 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D9FE1CC2AD88700009EAF21 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D1CF25C2AD75E63002E5A2B /* Project object */;
 }
