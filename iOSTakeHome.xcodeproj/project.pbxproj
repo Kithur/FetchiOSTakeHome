@@ -23,8 +23,15 @@
 		3D9FE1D42AD8A38B009EAF21 /* DashboardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1D32AD8A38B009EAF21 /* DashboardRepository.swift */; };
 		3D9FE1D72AD8A424009EAF21 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1D62AD8A424009EAF21 /* APIService.swift */; };
 		3D9FE1D92AD8A683009EAF21 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1D82AD8A683009EAF21 /* Endpoint.swift */; };
-		3D9FE1DC2AD8ACCD009EAF21 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1DB2AD8ACCD009EAF21 /* Util.swift */; };
 		3D9FE1DF2AD8B38C009EAF21 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FE1DE2AD8B38C009EAF21 /* NetworkManager.swift */; };
+		3DA4D6462AD9C2DA007C9287 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4D6452AD9C2DA007C9287 /* DetailView.swift */; };
+		3DA4D6482AD9C34D007C9287 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4D6472AD9C34D007C9287 /* DetailViewModel.swift */; };
+		3DA4D64C2AD9C3DB007C9287 /* DetailViewEntitites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4D64B2AD9C3DB007C9287 /* DetailViewEntitites.swift */; };
+		3DA4D64E2AD9F135007C9287 /* DetailViewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4D64D2AD9F135007C9287 /* DetailViewRepository.swift */; };
+		3DA4D6502AD9F302007C9287 /* FetchMealUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4D64F2AD9F302007C9287 /* FetchMealUseCase.swift */; };
+		3DA4D6522AD9F9F6007C9287 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4D6512AD9F9F6007C9287 /* MealDetailView.swift */; };
+		3DA4D6542ADA071C007C9287 /* IngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4D6532ADA071C007C9287 /* IngredientView.swift */; };
+		3DA4D6562ADA0875007C9287 /* IngredientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4D6552ADA0875007C9287 /* IngredientListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +70,15 @@
 		3D9FE1D32AD8A38B009EAF21 /* DashboardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRepository.swift; sourceTree = "<group>"; };
 		3D9FE1D62AD8A424009EAF21 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		3D9FE1D82AD8A683009EAF21 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		3D9FE1DB2AD8ACCD009EAF21 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		3D9FE1DE2AD8B38C009EAF21 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3DA4D6452AD9C2DA007C9287 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3DA4D6472AD9C34D007C9287 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		3DA4D64B2AD9C3DB007C9287 /* DetailViewEntitites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewEntitites.swift; sourceTree = "<group>"; };
+		3DA4D64D2AD9F135007C9287 /* DetailViewRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewRepository.swift; sourceTree = "<group>"; };
+		3DA4D64F2AD9F302007C9287 /* FetchMealUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMealUseCase.swift; sourceTree = "<group>"; };
+		3DA4D6512AD9F9F6007C9287 /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		3DA4D6532ADA071C007C9287 /* IngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientView.swift; sourceTree = "<group>"; };
+		3DA4D6552ADA0875007C9287 /* IngredientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +132,7 @@
 			children = (
 				3D9FE1DA2AD8AC98009EAF21 /* Util */,
 				3D9FE1D52AD8A402009EAF21 /* Networking */,
+				3DA4D63F2AD9C267007C9287 /* DetailView */,
 				3D9FE1BE2AD87E62009EAF21 /* Dashboard */,
 				3D1CF2672AD75E63002E5A2B /* iOSTakeHomeApp.swift */,
 				3D1CF2692AD75E63002E5A2B /* ContentView.swift */,
@@ -233,10 +248,80 @@
 		3D9FE1DA2AD8AC98009EAF21 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				3D9FE1DB2AD8ACCD009EAF21 /* Util.swift */,
 				3D9FE1DE2AD8B38C009EAF21 /* NetworkManager.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		3DA4D63F2AD9C267007C9287 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4D6442AD9C29D007C9287 /* Data */,
+				3DA4D6432AD9C294007C9287 /* Domain */,
+				3DA4D6412AD9C281007C9287 /* Presentation */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		3DA4D6402AD9C279007C9287 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4D6452AD9C2DA007C9287 /* DetailView.swift */,
+				3DA4D6512AD9F9F6007C9287 /* MealDetailView.swift */,
+				3DA4D6552ADA0875007C9287 /* IngredientListView.swift */,
+				3DA4D6532ADA071C007C9287 /* IngredientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DA4D6412AD9C281007C9287 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4D6422AD9C28C007C9287 /* ViewModel */,
+				3DA4D6402AD9C279007C9287 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3DA4D6422AD9C28C007C9287 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4D6472AD9C34D007C9287 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3DA4D6432AD9C294007C9287 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4D64A2AD9C3C0007C9287 /* Entities */,
+				3DA4D6492AD9C3B8007C9287 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3DA4D6442AD9C29D007C9287 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4D64D2AD9F135007C9287 /* DetailViewRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3DA4D6492AD9C3B8007C9287 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4D64F2AD9F302007C9287 /* FetchMealUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3DA4D64A2AD9C3C0007C9287 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4D64B2AD9C3DB007C9287 /* DetailViewEntitites.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,14 +460,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA4D6522AD9F9F6007C9287 /* MealDetailView.swift in Sources */,
 				3D9FE1DF2AD8B38C009EAF21 /* NetworkManager.swift in Sources */,
-				3D9FE1DC2AD8ACCD009EAF21 /* Util.swift in Sources */,
 				3D1CF26A2AD75E63002E5A2B /* ContentView.swift in Sources */,
+				3DA4D64E2AD9F135007C9287 /* DetailViewRepository.swift in Sources */,
 				3D9FE1C92AD88178009EAF21 /* DashboardViewModel.swift in Sources */,
+				3DA4D64C2AD9C3DB007C9287 /* DetailViewEntitites.swift in Sources */,
 				3D9FE1C62AD87FFF009EAF21 /* DashboardView.swift in Sources */,
 				3D9FE1C32AD87EB9009EAF21 /* DashboardEntities.swift in Sources */,
 				3D9FE1D92AD8A683009EAF21 /* Endpoint.swift in Sources */,
+				3DA4D6462AD9C2DA007C9287 /* DetailView.swift in Sources */,
 				3D9FE1D42AD8A38B009EAF21 /* DashboardRepository.swift in Sources */,
+				3DA4D6482AD9C34D007C9287 /* DetailViewModel.swift in Sources */,
+				3DA4D6542ADA071C007C9287 /* IngredientView.swift in Sources */,
+				3DA4D6502AD9F302007C9287 /* FetchMealUseCase.swift in Sources */,
+				3DA4D6562ADA0875007C9287 /* IngredientListView.swift in Sources */,
 				3D1CF2682AD75E63002E5A2B /* iOSTakeHomeApp.swift in Sources */,
 				3D9FE1CB2AD88549009EAF21 /* MealListView.swift in Sources */,
 				3D9FE1D72AD8A424009EAF21 /* APIService.swift in Sources */,
