@@ -8,13 +8,17 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
+// MARK: MealDetailView struct
 struct MealDetailView: View {
+    // MARK: - Properties
     private var meal: MealDetailModel
 
+    // MARK: - Initializers
     init(meal: MealDetailModel) {
         self.meal = meal
     }
 
+    // MARK: - body
     var body: some View {
         ScrollView {
             WebImage(url: meal.imageURL)
@@ -36,6 +40,7 @@ struct MealDetailView: View {
     }
 }
 
+// MARK: - Preview
 #Preview {
     MealDetailView(meal: MealDetailModel())
 }

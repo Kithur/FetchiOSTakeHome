@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Decoding Entities
 struct ResultMealDetailContainer: Codable {
     let meals: [ResultMealDetail]
 }
@@ -119,6 +120,7 @@ struct ResultMealDetail: Codable {
     }
 }
 
+// MARK: - Internal Entities
 struct MealDetailModel {
     let name: String
     let imageURL: URL?
@@ -127,6 +129,7 @@ struct MealDetailModel {
     let measures: [String]
 }
 
+// MARK: - Initializers Extension
 extension MealDetailModel {
     init(resultMealDetail: ResultMealDetail) {
         name = resultMealDetail.strMeal
@@ -169,7 +172,7 @@ struct IngredientListModel {
         return min(ingredients.count, measures.count)
     }
 }
-
+// MARK: - Initializers Extension
 extension IngredientListModel {
     init(meal: MealDetailModel) {
         ingredients = meal.ingredients

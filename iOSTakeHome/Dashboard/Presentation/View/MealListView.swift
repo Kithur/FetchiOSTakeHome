@@ -7,10 +7,12 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
-
+// MARK: - MealListView struct
 struct MealListView: View {
+    // MARK: - Properties
     var model: MealListModel
 
+    // MARK: - body
     var body: some View {
         HStack {
             WebImage(url: model.imageURL)
@@ -29,6 +31,7 @@ struct MealListView: View {
     }
 }
 
+// MARK: - Preview
 #Preview {
     MealListView(model: MealListModel())
 }

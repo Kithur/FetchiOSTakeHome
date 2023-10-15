@@ -19,18 +19,22 @@ enum DetailViewState {
     case failure
 }
 
+// MARK: DetailViewModel class
 final class DetailViewModel: DetailViewModelProtocol {
+    // MARK: - Properties
     var mealDetailModel: MealDetailModel?
     @Published var state: DetailViewState = .loading
     private let id: String
     private let useCase: FetchMealUseCaseProtocol
     private var bag: Set<AnyCancellable> = Set<AnyCancellable>()
 
+    // MARK: - Initializers
     init(id: String, useCase: FetchMealUseCaseProtocol) {
         self.id = id
         self.useCase = useCase
     }
 
+    // MARK: - Methods
     func fetchMeal() {
         useCase
             .execute(id: id)
@@ -47,6 +51,7 @@ final class DetailViewModel: DetailViewModelProtocol {
     }
 }
 
+// MARK: - Constructor Extension
 extension DetailViewModel {
     static func make(id: String) -> DetailViewModel {
         let serviceManager = ServiceManager()

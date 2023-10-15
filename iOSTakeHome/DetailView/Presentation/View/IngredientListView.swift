@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
-
+// MARK: IngredientListView struct
 struct IngredientListView: View {
+    // MARK: - Properties
     let model: IngredientListModel
 
+    // MARK: - Initializers
     init(model: IngredientListModel) {
         self.model = model
     }
 
+    // MARK: - body
     var body: some View {
         VStack {
             ForEach(Array(model.ingredients.enumerated()), id: \.offset) { index, ingredient in
@@ -23,6 +26,7 @@ struct IngredientListView: View {
     }
 }
 
+// MARK: - Preview
 #Preview {
     IngredientListView(model: IngredientListModel(meal: MealDetailModel()))
 }

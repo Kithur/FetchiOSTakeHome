@@ -9,24 +9,31 @@ import Combine
 
 protocol DashboardViewModelProtocol: ObservableObject {
     var mealArray: [MealListModel] { get set }
+    var alertMessage : String { get set }
+    var showingAlert: Bool { get set }
     func fetchMealList()
 }
 
+// MARK: - DashboardViewModel class
 final class DashboardViewModel: DashboardViewModelProtocol {
+    // MARK: - Properties
     @Published var mealArray = [MealListModel]()
+    @Published var alertMessage = ""
+    @Published var showingAlert = false
     private var bag: Set<AnyCancellable> = Set<AnyCancellable>()
     private let fetchMealListUseCase: FetchMealListUseCaseProtocol
 
+    // MARK: - Initializers
     init(fetchMealListUseCase: FetchMealListUseCaseProtocol) {
         self.fetchMealListUseCase = fetchMealListUseCase
     }
 
+    // MARK: - Methods
     func fetchMealList() {
         if NetworkManager.isConnected() {
             fetchMealListUseCase
                 .execute()
                 .sink(receiveCompletion: { result in
-                    // TODO: Do something about error management
                     switch result {
                     case .failure:
                         break
@@ -43,6 +50,7 @@ final class DashboardViewModel: DashboardViewModelProtocol {
     }
 }
 
+// MARK: - Constructor extension
 extension DashboardViewModel {
     static func make() -> DashboardViewModel {
         let serviceManager = ServiceManager()

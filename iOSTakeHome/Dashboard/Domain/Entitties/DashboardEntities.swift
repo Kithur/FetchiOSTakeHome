@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// MARK: - Decoding Entities
 struct MealList: Codable {
     let meals: [ResultMeal]
 }
@@ -17,12 +17,14 @@ struct ResultMeal: Codable {
     let idMeal: String
 }
 
+// MARK: - Internal Entities
 struct MealListModel: Hashable {
     let name: String
     let imageURL: URL?
     let id: String
 }
 
+// MARK: - Initializers Extension
 extension MealListModel {
     init(resultMeal: ResultMeal) {
         name = resultMeal.strMeal

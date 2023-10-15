@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3D1CF2682AD75E63002E5A2B /* iOSTakeHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1CF2672AD75E63002E5A2B /* iOSTakeHomeApp.swift */; };
-		3D1CF26A2AD75E63002E5A2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1CF2692AD75E63002E5A2B /* ContentView.swift */; };
 		3D1CF26C2AD75E64002E5A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1CF26B2AD75E64002E5A2B /* Assets.xcassets */; };
 		3D1CF26F2AD75E64002E5A2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1CF26E2AD75E64002E5A2B /* Preview Assets.xcassets */; };
 		3D1CF2792AD75E64002E5A2B /* iOSTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1CF2782AD75E64002E5A2B /* iOSTakeHomeTests.swift */; };
@@ -54,7 +53,6 @@
 /* Begin PBXFileReference section */
 		3D1CF2642AD75E63002E5A2B /* iOSTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1CF2672AD75E63002E5A2B /* iOSTakeHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTakeHomeApp.swift; sourceTree = "<group>"; };
-		3D1CF2692AD75E63002E5A2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D1CF26B2AD75E64002E5A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D1CF26E2AD75E64002E5A2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D1CF2742AD75E64002E5A2B /* iOSTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,7 +133,6 @@
 				3DA4D63F2AD9C267007C9287 /* DetailView */,
 				3D9FE1BE2AD87E62009EAF21 /* Dashboard */,
 				3D1CF2672AD75E63002E5A2B /* iOSTakeHomeApp.swift */,
-				3D1CF2692AD75E63002E5A2B /* ContentView.swift */,
 				3D1CF26B2AD75E64002E5A2B /* Assets.xcassets */,
 				3D1CF26D2AD75E64002E5A2B /* Preview Content */,
 			);
@@ -462,7 +459,6 @@
 			files = (
 				3DA4D6522AD9F9F6007C9287 /* MealDetailView.swift in Sources */,
 				3D9FE1DF2AD8B38C009EAF21 /* NetworkManager.swift in Sources */,
-				3D1CF26A2AD75E63002E5A2B /* ContentView.swift in Sources */,
 				3DA4D64E2AD9F135007C9287 /* DetailViewRepository.swift in Sources */,
 				3D9FE1C92AD88178009EAF21 /* DashboardViewModel.swift in Sources */,
 				3DA4D64C2AD9C3DB007C9287 /* DetailViewEntitites.swift in Sources */,

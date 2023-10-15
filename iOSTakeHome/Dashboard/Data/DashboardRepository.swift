@@ -11,13 +11,17 @@ protocol DashboardRepositoryProtocol {
     func fetchMealList() -> AnyPublisher<[MealListModel], Error>
 }
 
+// MARK: - DashboardRepository class
 final class DashboardRepository: DashboardRepositoryProtocol {
+    // MARK: - Properties
     private let serviceManager: APIService
 
+    // MARK: - Initializers
     init(serviceManager: APIService) {
         self.serviceManager = serviceManager
     }
 
+    // MARK: - Methods
     func fetchMealList() -> AnyPublisher<[MealListModel], Error> {
         serviceManager
             .fetch(from: .list, decodedType: MealList.self)

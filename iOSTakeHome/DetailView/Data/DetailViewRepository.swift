@@ -11,13 +11,17 @@ protocol DetailViewRepositoryProtocol {
     func fetchMeal(id: String) -> AnyPublisher<MealDetailModel, Error>
 }
 
+// MARK: - DetailViewRepository class
 final class DetailViewRepository: DetailViewRepositoryProtocol {
+    // MARK: - Properties
     private let serviceManager: APIService
 
+    // MARK: - Initializers
     init(serviceManager: APIService) {
         self.serviceManager = serviceManager
     }
 
+    // MARK: - Methods
     func fetchMeal(id: String) -> AnyPublisher<MealDetailModel, Error> {
         serviceManager
             .fetch(from: .id(id), decodedType: ResultMealDetailContainer.self).map({ MealDetailModel(resultMealDetail: $0.meals[Int.zero]) })

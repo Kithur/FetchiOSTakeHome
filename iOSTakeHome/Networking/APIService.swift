@@ -29,9 +29,12 @@ protocol APIService {
                              decodedType: T.Type) -> AnyPublisher<T, APIError>
 }
 
+// MARK: - ServiceManager class
 final class ServiceManager: APIService {
+    // MARK: - Properties
     private var session: URLSession
 
+    // MARK: - Initializers
     init(configuration: URLSessionConfiguration) {
         self.session = URLSession(configuration: configuration)
     }
@@ -40,6 +43,7 @@ final class ServiceManager: APIService {
         self.init(configuration: .default)
     }
 
+    // MARK: - Methods
     func fetch<T>(from mealRequest: MealRequest, decodedType: T.Type) -> AnyPublisher<T, APIError> where T : Decodable {
         guard let finalURL: URL = mealRequest.getFinalURL() else {
             return Fail(error: APIError.invalidEndpoint).eraseToAnyPublisher()

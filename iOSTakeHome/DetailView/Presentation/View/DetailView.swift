@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
-
+// MARK: DetailView struct
 struct DetailView<ViewModelProtocol: DetailViewModelProtocol>: View {
+    // MARK: - Properties
     @ObservedObject var viewModel: ViewModelProtocol
 
+    // MARK: - Initializers
     init(viewModel: ViewModelProtocol) {
         self.viewModel = viewModel
     }
 
+    // MARK: - body
     var body: some View {
         VStack {
             switch viewModel.state {
@@ -39,6 +42,7 @@ struct DetailView<ViewModelProtocol: DetailViewModelProtocol>: View {
     }
 }
 
+// MARK: - Preview
 #Preview {
     DetailView(viewModel: DetailViewModel.make(id: "53049"))
 }
